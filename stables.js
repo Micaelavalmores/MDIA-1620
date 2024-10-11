@@ -33,3 +33,20 @@ let discount = STABLES_MONTHLY_FEE * 3 *.10;
 
 console.log(`My horse's name is ${horseName} and his nickname is ${horseNickname}`);
 console.log(`You can save $${discount} if you stay for 3 months`)
+
+
+//Lesson-5
+
+
+
+if (horseName !== "blueberry") {
+    console.log("`{horseName} has come to visit the stables`");
+} else {
+    console.log(horseName + "is lonely");
+}
+
+if (!isHorseInside){
+    console.log(`${horseName} is outside`);
+} else {
+    console.log(`${horseName} is inside`);
+}
