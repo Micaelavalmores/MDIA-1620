@@ -40,4 +40,15 @@ Lab03
 
 **1 word of how you're feeling right now**
 
-  Very sleepy, been awake since 5:30am ;(
+  Very sleepy, been awake since 5:30am ;
+
+  //Lab06
+
+  **3 confusing things**
+  1. The terms used like "strings" and "arrays" but I know how they function.
+  2. How to navigate through the github website. I think i just need to get used to it.
+  3. What kind of methods I could use in different scenarios to get a certain result.
+  **3 things you have a solid understanding of**
+  1. How the commands and values functions
+  2. How to navigate through VSCode
+  3. How to git push

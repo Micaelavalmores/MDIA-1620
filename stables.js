@@ -4,7 +4,7 @@ horseName = "Yeehaw"
 console.log(horseName)
 let horseAge = 2;
 console.log(horseAge)
-let isHorseInside = true;
+let isHorseInside = "inside";
 console.log(isHorseInside)
 
 
@@ -38,7 +38,6 @@ console.log(`You can save $${discount} if you stay for 3 months`)
 //Lesson-5
 
 
-
 if (horseName !== "blueberry") {
     console.log(`${horseName} has come to visit the stables`);
 } else {
@@ -50,3 +49,49 @@ if (!isHorseInside){
 } else {
     console.log(`${horseName} is inside`);
 }
+
+
+//Lesson-6
+
+let word = "Honey"
+console.log(word.charAt(0));
+//H Indexes are offsets. First letter of "Honey" is H
+console.log(word.charAt(2));
+//n. Start from 0 1 2 3...letters in the "word".
+console.log(word.charAt(4));
+//y
+console.log(word.length);
+//tells you how long the word is (7)
+
+let horseNames = [horseName, "Sparkles", "Blueberry"];
+let horseAges = [horseAge, 5, 69];
+let horseLocations = [isHorseInside, "outside"];
+console.log(horseNames.length)
+//always square brackets [] for Arrays
+horseNames.push("Peonies");
+console.log(horseNames.at(3));
+//.at to pick an item
+horseNames.splice(1, 0, "Maximus");
+//first number: which placement within the items, 
+//second number:how many you want to delete, 
+//last number: item name
+console.log(horseNames);
+console.log(horseNames [1]);
+console.log(horseAges[1]);
+//logs out an item
+console.log(`Welcome to my stables! There are ${horseNames.length} horses staying here. Their names are ${horseNames} and they are ${horseAges} years old.`);
+if(horseNames.length < 5) {
+    console.log("These stables are unpopular");
+} else {
+    console.log("What a popular stable!")
+}
+console.log(horseAges[1] * horseAges[2]);
+
+//Lab06
+
+console.log(`Welcome to my stables! There are ${horseNames.length} horses and their lovely names are ${horseNames}. They are ${horseAges} years old but they are the best horses in town!`);
+console.log(`${horseNames[0]} is ${horseLocations[1]}`);
+console.log(`${horseNames[2]} is ${horseLocations[0]}`);
+console.log(`${horseNames[3]} is ${horseLocations[1]}`);
+console.log(`${horseNames[4]} is ${horseLocations[0]}`);
+console.log(`${horseNames[1]} is ${horseLocations[0]}`);
