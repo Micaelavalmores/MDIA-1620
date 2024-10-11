@@ -40,7 +40,7 @@ console.log(`You can save $${discount} if you stay for 3 months`)
 
 
 if (horseName !== "blueberry") {
-    console.log("`{horseName} has come to visit the stables`");
+    console.log(`${horseName} has come to visit the stables`);
 } else {
     console.log(horseName + "is lonely");
 }
