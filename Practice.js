@@ -25,6 +25,11 @@ let word = "Rave"
 //console.log(word.charAt(6));
 //console.log(word.length);
 
+//let randomNames = ["Renee", "Ymir"];
+//let joinedNames = randomNames.join();
+//console.log(joinedNames);
+
+
 let girlNames = [girlName, "Alex", "Princess"];
 let girlAges = [girlAge, "24", "22"];
 let relationshipStatuses = [relationshipStatus, "heartbroken", "cheated"];
@@ -44,3 +49,21 @@ if (girlName === "Vivian") {
 console.log(`${girlNames.at(2)} was devastated and ${relationshipStatuses.at(1)} and broke up with ${otherMan}`);
 console.log(`Soon after, ${girlName} moved in ${otherMan}'s studio apartment at ${apartmentLocation} with a rent costing ${aptRent}`);
 console.log(`It took them ${word.length} years of living together until ${girlName} started cheating on ${otherMan} after she had gone ${isGirlrRaving}`);
+
+//lessonn 8 Practice
+function square(number) {
+  return number * number;
+}
+square(5);
+
+console.log(girlName + " is " + " an " + girlNickname);
+ let templateLiteralIntro = `The girl's name is ${girlName} and she likes ${isGirlrRaving}!`
+ console.log(templateLiteralIntro);
+
+ function isSheCheating(girl) {
+  if (isGirlrRaving[girl]) {
+    return girlNames[girl] + " is not cheating";
+  }
+    return girlNames[girl] + " is cheating";
+ }
+ console.log(isSheCheating(1));
