@@ -119,3 +119,33 @@ function cheat(Alex, Vivian) {
 
 cheat([true, false]);
 
+// let num = 10;
+// if (num > 18){
+//   num = num + 3;
+//   //This number is 13 and is not greater than 18 therefore it is false
+// } else {
+//   num = num + 2;
+//   //Since the IF statement is false, this will console log
+// }
+// console.log(num);
+
+// let num = 10;
+// let str = "10";
+// str = "ten";
+// if (num > 10){
+//   num = 9;
+// }
+// console.log(num);
+// console.log(str);
+
+// let str = "Billie";
+// function concat(extra) {
+//   str = str + " " + extra;
+// }
+// concat=("and Teenie");
+// console.log(str, concat);
+
+
+let arr = [1, 2, 3, 5];
+arr.splice(3, 0, "4");
+console.log(arr);
