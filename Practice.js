@@ -50,11 +50,11 @@ let apartmentLocation = "Downtown Vancouver"
 // console.log(`Soon after, ${girlName} moved in ${otherMan}'s studio apartment at ${apartmentLocation} with a rent costing ${aptRent}`);
 // console.log(`It took them ${word.length} years of living together until ${girlName} started cheating on ${otherMan} after she had gone ${isGirlrRaving}`);
 
-//lessonn 8 Practice
-function square(number) {
-  return number * number;
-}
-square(5);
+// //lessonn 8 Practice
+// function square(number) {
+//   return number * number;
+// }
+// square(5);
 
 // console.log(girlName + " is " + " an " + girlNickname);
 //  let templateLiteralIntro = `The girl's name is ${girlName} and she likes ${isGirlrRaving}!`
@@ -69,24 +69,24 @@ square(5);
 //  console.log(isSheCheating(1));
 
 
-function square(number) {
-  return number + number;
-}
-square(5);
-console.log(square(5));
+// function square(number) {
+//   return number + number;
+// }
+// square(5);
+// console.log(square(5));
 
-function whatsCheating(answer) {
-  return "She is " + answer;
-}
-whatsCheating("unloyal");
-console.log(whatsCheating("unloyal"));
+// function whatsCheating(answer) {
+//   return "She is " + answer;
+// }
+// whatsCheating("unloyal");
+// console.log(whatsCheating("unloyal"));
 
 
-function paper(width, length) {
-  return width * length;
-}
+// function paper(width, length) {
+//   return width * length;
+// }
 
-console.log(paper(3, 9));
+// console.log(paper(3, 9));
 
 function sephora(lipMask, perfume, blush) {
   if (sephora === "foundation"); {
@@ -97,4 +97,25 @@ function sephora(lipMask, perfume, blush) {
 
   console.log(sephora("Laneige", "Replica", "Rare Beauty"));
 
+function password(userPassword, requiredLength) {
+  if (userPassword.length >= requiredLength) {
+    console.log("Password Accepted!"); 
+  } else {
+    console.log("Your password is too short!");
+  }
+}
+
+password("ilovemybird", 12);
+
+
+
+function cheat(Alex, Vivian) {
+  if (Alex == Vivian ) {
+    console.log ("Alex did not cheat");
+  } else {
+    console.log("Vivian was spreading rumours");
+  }
+}
+
+cheat([true, false]);
 
