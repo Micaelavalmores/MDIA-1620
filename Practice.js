@@ -35,20 +35,20 @@ let girlAges = [girlAge, "24", "22"];
 let relationshipStatuses = [relationshipStatus, "heartbroken", "cheated"];
 let apartmentLocation = "Downtown Vancouver"
 
-//console.log(girlNames);
+console.log(girlNames);
 
-// console.log(`${girlName} has a boyfriend named ${boyfriendName} and he had an affair with ${girlNames.at(1)}`);
-// console.log(`${girlName} was very ${relationshipStatuses.at(1)} because she got ${relationshipStatuses.at(2)} on by her boyfriend`);
-// console.log(`Once ${girlName} turned ${girlAge}, she started ${isGirlrRaving} and met ${otherMan}`);
-// console.log(`However, ${otherMan} has a girlfriend named ${girlNames.at(2)}`);
-// if (girlName === "Vivian") {
-//     console.log(`${otherMan} hooked up with ${girlName} that night without ${girlNames.at(2)} knowing`)
-// } else {
-//     console.log(`${otherMan} did not entertain ${girlNAme} during that night`)
-// };
-// console.log(`${girlNames.at(2)} was devastated and ${relationshipStatuses.at(1)} and broke up with ${otherMan}`);
-// console.log(`Soon after, ${girlName} moved in ${otherMan}'s studio apartment at ${apartmentLocation} with a rent costing ${aptRent}`);
-// console.log(`It took them ${word.length} years of living together until ${girlName} started cheating on ${otherMan} after she had gone ${isGirlrRaving}`);
+console.log(`${girlName} has a boyfriend named ${boyfriendName} and he had an affair with ${girlNames.at(1)}`);
+console.log(`${girlName} was very ${relationshipStatuses.at(1)} because she got ${relationshipStatuses.at(2)} on by her boyfriend`);
+console.log(`Once ${girlName} turned ${girlAge}, she started ${isGirlrRaving} and met ${otherMan}`);
+console.log(`However, ${otherMan} has a girlfriend named ${girlNames.at(2)}`);
+if (girlName === "Vivian") {
+    console.log(`${otherMan} hooked up with ${girlName} that night without ${girlNames.at(2)} knowing`)
+} else {
+    console.log(`${otherMan} did not entertain ${girlNAme} during that night`)
+};
+console.log(`${girlNames.at(2)} was devastated and ${relationshipStatuses.at(1)} and broke up with ${otherMan}`);
+console.log(`Soon after, ${girlName} moved in ${otherMan}'s studio apartment at ${apartmentLocation} with a rent costing ${aptRent}`);
+console.log(`It took them ${word.length} years of living together until ${girlName} started cheating on ${otherMan} after she had gone ${isGirlrRaving}`);
 
 // //lessonn 8 Practice
 // function square(number) {
@@ -60,13 +60,15 @@ let apartmentLocation = "Downtown Vancouver"
 //  let templateLiteralIntro = `The girl's name is ${girlName} and she likes ${isGirlrRaving}!`
 //  console.log(templateLiteralIntro);
 
-//  function isSheCheating(girl) {
-//   if (isGirlrRaving[girl]) {
-//     return girlNames[girl] + " is not cheating";
-//   }
-//     return girlNames[girl] + " is cheating";
-//  }
-//  console.log(isSheCheating(1));
+ function isSheCheating(girl) {
+  if (girl===1) {
+    return girlNames[girl] + " is not cheating";
+  } else {
+    return girlNames[girl] + " is cheating";
+  }
+    
+ }
+ console.log(isSheCheating(1));
 
 
 // function square(number) {
