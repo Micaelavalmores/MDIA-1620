@@ -98,9 +98,63 @@
 
 //Lesson 10 
 
-let horse = {
-    name: "Shoe",
-    nickname: "Toe",
-    age: 2,
-    isInside: false,
+// let strawberry = {
+//     name: "Strawberry",
+//     nickname: "Shortcake",
+//     age: 2,
+//     isInside: false,
+//     intro() {
+//         console.log(`My horse is called ${this.name} and they are ${this.age}`)
+//     }
+// };
+// console.log("My horse is called " + strawberry.name + " and they are " + strawberry.age);
+
+// function intro(horseName, horseAge) {
+//     console.log (
+//         "My horse is named " +
+//         horseName +
+//         " and they are " +
+//         horseAge
+//     )
+// }
+
+// intro(strawberry.name, strawberry.age);
+
+// function nameInfo(horse, key){
+//     console.log(`This horse is ${key}d ${horse[key]}`)
+// }
+// nameInfo(strawberry, "nickname");
+// nameInfo(strawberry, "name");
+
+// console.log(strawberry);
+// strawberry.faveSnack = "hay";
+// console.log(strawberry);
+
+// function rentNotice() {
+//     console.log(`${this.name}'s monthly rent is $${this.MOTHLY_RENT}!`)
+// }
+
+function createHorse(name, nickname, age, faveTreat, isInside) {
+    // const tempObj = {};
+
+    this.name= name;
+    this.nickname= nickname;
+    this.age= age;
+    this.faveTreat= faveTreat;
+    this.isInside= isInside;
+    this.rent = 125;
+    this.intro = function () {
+        console.log(
+            `My horse is called ${this.name} and they are ${this.age} years old!`
+        );
+    };
+    // return tempObj;
 };
+
+const strawberry = new createHorse("Strawberry", "Berry", 2, "Hay", true)
+const blueberry = new createHorse("Blueberry", "Blue", 3, "Carrot", false)
+const raspberry = new createHorse("Raspberry", "Red", 4, "Grass", true)
+
+console.log(strawberry);
+console.log(blueberry);
+console.log(raspberry);
