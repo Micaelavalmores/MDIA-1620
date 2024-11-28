@@ -238,22 +238,70 @@ lateRent(horses[3]);
 // the treat, log out their disatisfaction and check the next horse. Exit the loop when you find
 // the horse that likes the treat.
 
-
+let treatCheck = "straw";
+for (let i = 0; horses.length; i++) {
+    if (horses[i].faveTreat === treatCheck) {
+        console.log(`Affirmative! ${horses[i].name} loves ${treatCheck}`)
+        break;
+    } else {
+        console.log(`Negative! ${horses[i].name} does not like ${treatCheck}. They prefer ${horses[i].faveTreat}.`)
+    };
+};
 
 // Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out
 // the return value outside of the function.
+
+function nickNameCheck(horseName) {
+    const horse = horses.find(horses => horses.name === horseName);
+    if (horse) {
+        return (horse.nickname);
+    } 
+    return (`Horse cannot be found`);
+}
+
+console.log (nickNameCheck("Tiramisu"));
 
 //------------------------- Day to day operations -------------------------//
 
 // Create and invoke a function references one of your unique horse properties. It should
 // contain a conditional or a loop.
+function horseHabit () {
+    for (let i = 0; i < horses.length; i++) {
+        if (horses[i].unique01.includes('love') || horses[i].unique01.includes('like')) {
+            console.log(`${horses[i].name} ${horses[i].unique01}.`)
+        } else {
+            console.log(`${horses[i].name} does not like or love anything.`)
+        };
+    }
+};
+
+horseHabit();
 
 // Morning! Create and invoke a function that moves all your horses outside. It should
 // log out statement indicating the horses have been moved to spend time in the sun.
 
+function movingHorses () {
+    for (let i = 0; i < horses.length; i++) {
+      horses[i].isInside = false;
+      console.log(`${horses[i].name} was taken outside to play and spend time in the sun!`)
+    } 
+};
+
+movingHorses();
+
 // Initialize a method on your horses that moves them inside if they are outside, and
 // vice versa.
+function locationChecker () {
+    for (let i = 0; i < horses.length; i++) {
+    if (horses[i].isInside) {
+        console.log(`${horses[i].name} is now inside.`)
+    } else {
+        console.log(`${horses[i].name} was taken outside.`)
+    };
+    }
+};
 
+locationChecker();
 // Food! Create and invoke a function that feeds your horses. If the horse is outside, it
 // should call them in, and then all horses should be fed a treat. Log the activity of
 // the horses.
