@@ -298,17 +298,40 @@ function locationChecker () {
     } else {
         console.log(`${horses[i].name} was taken outside.`)
     };
-    }
+    };
 };
 
 locationChecker();
 // Food! Create and invoke a function that feeds your horses. If the horse is outside, it
 // should call them in, and then all horses should be fed a treat. Log the activity of
 // the horses.
+function feedHorses () {
+    for (let i = 0; i < horses.length; i++) {
+        if (!horses[i].isInside) {
+            console.log(`${horses[i].name} come inside, it's time to eat! We have ${horses[i].faveTreat} for you!`);
+            horses[i].isInside = true;
+            console.log(`${horses[i].name} is inside and ready to feast!`);
+        } 
+        console.log(`${horses[i].name} is happily eating ${horses[i].faveTreat} now!`);
+    };
+    console.log(`All horses have a full stomach now!`);
+};
 
+feedHorses();
 // Bedtime! Update the function that lets your horses outside so that it also calls them
 // in if it is getting dark. Only the horses that moved should log out a message. Invoke the function.
 
+function bedTime (isDark) {
+    for (let i = 0; i < horses.length; i++) {
+        if (isDark) {
+            if (horses[i].isInside) {
+                console.log(`${horses[i].name}, please come inside and sleep.`)
+            };
+        }; 
+    };
+};
+
+bedTime(true);
 //------------------------- Bonus -------------------------//
 
 // Replace the ascii art at the top of the file with art representing your stable.
