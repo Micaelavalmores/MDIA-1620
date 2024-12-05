@@ -69,23 +69,6 @@ horses[3].isHungry = true;
 
 //------------------------- Stable roster -------------------------//
 
-// function horse(name, nickname, faveTreat, age, monthlyRent, isInside, unique01, unique02) {
-//     this.name = name;
-//     this.nickname =  nickname;
-//     this.faveTreat = faveTreat;
-//     this.age = age;
-//     this.monthlyRent = monthlyRent;
-//     this.isInside = isInside;
-//     this.unique01 = unique01;
-//     this.unique02 = unique02;
-//     this.horseIntro = function () {
-//         return `Hi! Meet ${this.name} but we call em' ${this.nickname}. They're about ${this.age} years old and they pay ${this.monthlyRent} a month in rent. They ${this.unique01} but they ${this.unique02}.`
-//     };
-//     this.horseTrait = function () {
-//         return `${this.name} can run for ${this.age * 2} hours a day until they're tired. But if you give them some ${this.faveTreat}, they'll be up and runnin' again`
-//     };
-
-// };
 // horses = [
 //     {
 //         name: "Tiramisu",
@@ -129,8 +112,6 @@ horses[3].isHungry = true;
 //     }
 // ];
 
-
-
 //---------------------- Growing business ----------------------//
 
 let numberOfStables = 15;
@@ -168,9 +149,6 @@ for (let i = 0; horses.length; i++) {
     };
 };
 
-// Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out
-// the return value outside of the function.
-
 function nickNameCheck(horseName) {
     const horse = horses.find(horses => horses.name === horseName);
     if (horse) {
@@ -203,19 +181,16 @@ function movingHorses () {
 
 movingHorses();
 
-locationUpdate = function (){
+locationUpdate = function () {
     if (!horses.isInside) {
         horses.isInside = true;
     } 
-    else 
+    else {
         (horses.isInside) 
         horses.isInside = false;
+    }
     };
 
-
-// Food! Create and invoke a function that feeds your horses. If the horse is outside, it
-// should call them in, and then all horses should be fed a treat. Log the activity of
-// the horses.
 function feedHorses () {
     for (let i = 0; i < horses.length; i++) {
         if (!horses[i].isInside) {
@@ -229,8 +204,6 @@ function feedHorses () {
 };
 
 feedHorses();
-// Bedtime! Update the function that lets your horses outside so that it also calls them
-// in if it is getting dark. Only the horses that moved should log out a message. Invoke the function.
 
 function bedTime (isDark) {
     for (let i = 0; i < horses.length; i++) {
@@ -243,6 +216,4 @@ function bedTime (isDark) {
 };
 
 bedTime(true);
-//------------------------- Bonus -------------------------//
 
-// Replace the ascii art at the top of the file with art representing your stable.
